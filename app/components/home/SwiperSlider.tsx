@@ -15,12 +15,13 @@ import Image from "next/image";
 
 const SwiperSlider = () => {
   return (
-    <div className="mb-10 md:mb-28">
+    <div className="my-10 md:my-28">
       <SectionTitle
         subheading="order online"
         heading="From 11.00am to 10.00pm"
       />
       <Swiper
+        className="mt-8 md:mt-16"
         spaceBetween={5}
         slidesPerView={4}
         onSlideChange={() => console.log("slide change")}
