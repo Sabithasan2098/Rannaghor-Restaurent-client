@@ -2,6 +2,7 @@ import React from "react";
 import menuData from "@/lib/menu.json";
 import SectionTitle from "../shered/sectionTitle/SectionTitle";
 import Menu from "../shered/menu/Menu";
+import Button from "../shered/button/Button";
 
 const sliceMenu = menuData.slice(0, 6);
 
@@ -20,6 +21,9 @@ const OurMenu = () => {
             />
           </div>
         ))}
+      </div>
+      <div className="mt-4 md:mt-10 flex justify-center">
+        <Button name="View full Menu" />
       </div>
     </div>
   );
