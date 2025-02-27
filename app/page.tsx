@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Banner from "./components/home/Banner";
+import ChefService from "./components/home/ChefService";
 import SwiperSlider from "./components/home/SwiperSlider";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <div className="max-w-7xl mx-auto">
         <SwiperSlider />
+        <ChefService />
       </div>
     </section>
   );
