@@ -1,23 +1,31 @@
 import Link from "next/link";
 import React from "react";
+import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar: React.FC = () => {
   const nav = (
     <>
-      <li className="uppercase">
-        <Link href="#">Home</Link>
+      <li className="uppercase ">
+        <Link href="/">Home</Link>
       </li>
-      <li className="uppercase">
+      <li className="uppercase ">
         <Link href="#">Contact Us</Link>
       </li>
-      <li className="uppercase">
+      <li className="uppercase ">
         <Link href="#">Dashboard</Link>
       </li>
+      <li className="uppercase ">
+        <Link href="ourMenu">Our Menu</Link>
+      </li>
+
       <li className="uppercase">
-        <Link href="#">Our Menu</Link>
+        <Link href="ourShop">Our Shop</Link>
       </li>
       <li className="uppercase">
-        <Link href="#">Our Shop</Link>
+        <Link href="#">
+          Cart{" "}
+          <TiShoppingCart className="text-xl bg-green-500 rounded-full p-[2px]" />
+        </Link>
       </li>
     </>
   );
@@ -55,7 +63,7 @@ const Navbar: React.FC = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex lg:navbar-end">
-        <ul className="menu menu-horizontal px-1 ">{nav}</ul>
+        <ul className="menu menu-horizontal px-1">{nav}</ul>
         <div className="flex items-center ">
           <Link
             className="bg-[#ffa204] hover:bg-[#ffb53d] transition-all text-white px-4 py-2 rounded-md"
