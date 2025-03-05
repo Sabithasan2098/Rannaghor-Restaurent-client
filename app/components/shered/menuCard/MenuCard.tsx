@@ -10,7 +10,7 @@ interface IMenuCard {
 
 const MenuCard: React.FC<IMenuCard> = ({ name, text, image, price }) => {
   return (
-    <div className="max-w-80 mx-auto relative flex flex-col items-center bg-[#f3f3f3] pb-4">
+    <div className="max-w-80 mx-auto relative flex flex-col items-center bg-[#f3f3f3] pb-4 hover:shadow-2xl transform transition-all duration-300">
       <Image src={image} alt="food card image" height={400} width={400} />
       <p className="absolute bg-black text-white px-3 py-1 top-2 right-2">
         {price}

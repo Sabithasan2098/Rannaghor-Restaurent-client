@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <Link href="/">Home</Link>
       </li>
       <li className="uppercase ">
-        <Link href="#">Contact Us</Link>
+        <Link href="contactUs">Contact Us</Link>
       </li>
       <li className="uppercase ">
         <Link href="#">Dashboard</Link>
