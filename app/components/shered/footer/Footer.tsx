@@ -1,11 +1,18 @@
+"use client";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
+import useCurrentPath from "@/app/hook/useCurrentPath";
 
 const Footer = () => {
+  const pathName = useCurrentPath();
+  const isDashboard = pathName.startsWith("/dashboard");
+  if (isDashboard) {
+    return null;
+  }
   return (
-    <div className="h-96 md:h-72 text-white bg-[#111828] mt-8 md:mt-16">
+    <div className="h-96 md:h-72 text-white bg-[#111828] ">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center h-full pt-8 md:pt-0">
         <div className="flex-1 text-center space-y-2">
           <h2 className="text-2xl font-semibold pb-2">CONTACT US</h2>

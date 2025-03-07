@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 const Testimonial: React.FC = () => {
   return (
-    <div className="mt-8 md:mt-16">
+    <div className="my-8 md:my-16">
       <SectionTitle heading="What's Your Client Say" subheading="testimonial" />
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {reviews.map((data) => (

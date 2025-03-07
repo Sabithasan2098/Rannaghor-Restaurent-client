@@ -31,7 +31,7 @@ const OurMenu: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="mb-8 md:mb-16">
       <MenuCategory
         img={menuImg}
         title="Our Menu"

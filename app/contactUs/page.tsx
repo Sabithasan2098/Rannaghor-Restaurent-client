@@ -7,7 +7,7 @@ import ContactForm from "../components/contact/ContactForm";
 
 const page = () => {
   return (
-    <div>
+    <div className="mb-8 md:mb-16">
       <MenuCategory
         img={image}
         title="contact us"

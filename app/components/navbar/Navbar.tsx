@@ -1,8 +1,15 @@
+"use client";
+import useCurrentPath from "@/app/hook/useCurrentPath";
 import Link from "next/link";
 import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar: React.FC = () => {
+  const pathName = useCurrentPath();
+  const isDashBoard = pathName.startsWith("/dashboard");
+  if (isDashBoard) {
+    return null;
+  }
   const nav = (
     <>
       <li className="uppercase ">
@@ -12,7 +19,7 @@ const Navbar: React.FC = () => {
         <Link href="contactUs">Contact Us</Link>
       </li>
       <li className="uppercase ">
-        <Link href="#">Dashboard</Link>
+        <Link href="/dashboard">Dashboard</Link>
       </li>
       <li className="uppercase ">
         <Link href="ourMenu">Our Menu</Link>

@@ -5,7 +5,7 @@ import OurShop from "../components/ourShop/OurShop";
 
 const page = () => {
   return (
-    <div>
+    <div className="mb-8 md:mb-16">
       <MenuCategory
         img={bannerImg}
         title="our shop"
